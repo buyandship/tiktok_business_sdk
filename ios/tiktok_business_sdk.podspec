@@ -16,7 +16,7 @@ A new Flutter plugin project.
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
 
-  s.dependency 'TikTokBusinessSDK', '~> 1.5.0'
+  s.dependency 'TikTokBusinessSDK', '~> 1.6.0'
 
   s.platform = :ios, '13.0'
 

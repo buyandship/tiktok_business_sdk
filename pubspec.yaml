@@ -4,8 +4,8 @@ version: 0.0.1
 homepage: https://github.com/ganlong-2016/tiktok_business_sdk
 repository: https://github.com/ganlong-2016/tiktok_business_sdk
 environment:
-  sdk: ^3.9.0
-  flutter: '>=3.3.0'
+  sdk: ^3.8.0
+  flutter: ">=3.3.0"
 
 dependencies:
   flutter:
