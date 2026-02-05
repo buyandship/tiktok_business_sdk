@@ -41,13 +41,12 @@ class TiktokBusinessSdkPlugin :
                 val enableAutoIapTrack: Boolean? = call.argument<Boolean>("enableAutoIapTrack")
                 val disableAutoEnhancedDataPostbackEvent: Boolean? =
                     call.argument<Boolean>("disableAutoEnhancedDataPostbackEvent")
-                if (accessToken?.isNotEmpty() == true &&
-                    appId?.isNotEmpty() == true &&
+                if (appId?.isNotEmpty() == true &&
                     ttAppId?.isNotEmpty() == true
                 ) {
 
                     val ttConfig =
-                        TikTokBusinessSdk.TTConfig(applicationContext, accessToken)
+                        TikTokBusinessSdk.TTConfig(applicationContext, accessToken ?: "")
                     ttConfig.apply {
                         setAppId(appId)
                         setTTAppId(ttAppId)
